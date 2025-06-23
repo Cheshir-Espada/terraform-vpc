@@ -13,5 +13,6 @@ module "bastion" {
   vpc_id        = module.network.vpc_id
   sg_id         = module.network.bastion_sg_id
   key_name      = var.key_name
+  region        = var.region
 }
 
